@@ -1,0 +1,1 @@
+GitHub Pages용\n1) 이 폴더 안의 index.html을 GitHub 저장소 루트에 업로드\n2) Settings > Pages > Deploy from a branch > main > /(root) > Save\n

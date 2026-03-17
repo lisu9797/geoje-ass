@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>거제교회 복음 전도 집회</title>
+  <meta property="og:title" content="거제교회 복음 전도 집회" />
+  <meta property="og:description" content="새로운 생명으로의 초대 · 2026년 3월 23일 ~ 25일 오후 8시" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190918_166%2F1568788860792S89Wo_PNG%2FuU5nuRcjO29cjpXB7OF3IwsZ.png" />
+  <style>
+    :root{
+      --bg:#f7f1e8;
+      --navy:#355f7a;
+      --mint:#b8dfd8;
+      --accent:#f2a869;
+      --stone-900:#1c1917;
+      --stone-700:#44403c;
+      --stone-500:#78716c;
+      --amber-900:#78350f;
+      --card:#ffffff;
+      --soft:#f5ece0;
+      --soft-2:#fffaf4;
+      --border:#e7e5e4;
+      --shadow:0 16px 34px rgba(28,25,23,.08);
+      --radius:32px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--stone-900);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif}
+    a{color:inherit}
+    .page{min-height:100vh}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:var(--navy);
+      color:#fff;
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:0;
+      background-image:
+        radial-gradient(circle at top left, rgba(255,255,255,.10), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(255,210,168,.16), transparent 28%);
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      max-width:760px;
+      margin:0 auto;
+      padding:42px 24px 44px;
+      text-align:center;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:var(--accent);
+      color:var(--navy);
+      padding:11px 20px;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.03em;
+    }
+    .eyebrow{
+      margin:28px 0 0;
+      font-size:14px;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      color:var(--mint);
+      font-weight:600;
+    }
+    .church-name{
+      margin:14px 0 0;
+      font-size:68px;
+      line-height:1;
+      letter-spacing:-.04em;
+      font-weight:800;
+      color:var(--mint);
+    }
+    .headline{
+      margin:20px 0 0;
+      font-size:34px;
+      line-height:1.25;
+      font-weight:700;
+      color:#fff;
+    }
+    .summary{
+      max-width:620px;
+      margin:20px auto 0;
+      font-size:17px;
+      line-height:1.8;
+      color:rgba(255,255,255,.92);
+    }
+    .intro-box{
+      margin:34px auto 0;
+      max-width:760px;
+      border:1.5px solid var(--accent);
+      border-radius:var(--radius);
+      background:rgba(53,95,122,.72);
+      backdrop-filter: blur(4px);
+      text-align:left;
+      padding:24px;
+      box-shadow:0 12px 28px rgba(0,0,0,.12);
+    }
+    .intro-top{
+      color:var(--accent);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      margin:0 0 14px;
+    }
+    .intro-box p{
+      margin:0 0 12px;
+      font-size:16px;
+      line-height:1.85;
+      color:rgba(255,255,255,.92);
+    }
+    .scroll{
+      margin-top:26px;
+      font-size:12px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.78);
+    }
+    .main{
+      max-width:760px;
+      margin:0 auto;
+      padding:30px 20px 64px;
+    }
+    .card{
+      background:rgba(255,255,255,.88);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .card + .section-gap{height:40px}
+    .eyebrow-small{
+      margin:0 0 8px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.28em;
+      color:rgba(120,53,15,.65);
+      text-transform:uppercase;
+    }
+    .title{
+      margin:0;
+      font-size:34px;
+      line-height:1.25;
+      letter-spacing:-.03em;
+    }
+    .desc{
+      margin:14px 0 0;
+      font-size:16px;
+      line-height:1.8;
+      color:var(--stone-700);
+    }
+    .body p{
+      margin:0 0 14px;
+      font-size:16px;
+      line-height:1.9;
+      color:var(--stone-700);
+    }
+    .closing{
+      font-weight:600;
+      color:var(--stone-900)!important;
+      padding-top:4px;
+    }
+    .cards{
+      margin-top:22px;
+      display:grid;
+      gap:12px;
+    }
+    .info{
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+      border-radius:24px;
+      border:1px solid rgba(231,229,228,.9);
+      background:rgba(255,255,255,.92);
+      padding:18px;
+      box-shadow:0 6px 16px rgba(28,25,23,.04);
+      text-decoration:none;
+    }
+    .icon{
+      width:46px;height:46px;border-radius:18px;background:#fef3c7;
+      color:var(--amber-900);display:flex;align-items:center;justify-content:center;
+      flex:0 0 46px;font-size:20px;
+    }
+    .label{font-size:14px;color:var(--stone-500);font-weight:600}
+    .value{margin-top:3px;white-space:pre-line;font-size:18px;line-height:1.55;font-weight:700;color:var(--stone-900)}
+    .host{
+      margin-top:16px;
+      border-radius:24px;
+      background:var(--soft);
+      padding:18px 20px;
+      color:var(--stone-700);
+      font-size:15px;
+      line-height:1.7;
+    }
+    .host strong{display:block;color:var(--stone-900);margin-bottom:4px}
+    .worship{
+      background:linear-gradient(135deg, #fffaf4 0%, #f9f1e7 50%, #efe3d3 100%);
+      border:1px solid var(--border);
+    }
+    .worship-list{margin-top:22px;display:grid;gap:12px}
+    .worship-item{
+      display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+      border-radius:22px;border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.84);
+      padding:16px 18px;box-shadow:0 6px 16px rgba(28,25,23,.04)
+    }
+    .worship-name{font-size:18px;font-weight:700;color:var(--stone-900)}
+    .worship-time{font-size:15px;line-height:1.6;text-align:right;color:var(--stone-500);font-weight:700}
+    .soft-box{
+      border-radius:24px;
+      background:var(--bg);
+      padding:20px;
+    }
+    .actions{display:grid;gap:12px;margin-top:16px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      min-height:50px;border-radius:999px;padding:12px 18px;font-weight:700;
+      text-decoration:none;border:none;cursor:pointer;font-size:15px;
+    }
+    .btn-primary{background:var(--amber-900);color:#fff}
+    .btn-secondary{background:#fff;border:1px solid #d6d3d1;color:var(--stone-900)}
+    footer{padding-top:48px;text-align:center}
+    .footer-box{
+      border-radius:var(--radius);border:1px solid var(--border);background:rgba(255,255,255,.88);
+      padding:28px;box-shadow:var(--shadow)
+    }
+    .share-wrap p{
+      margin:10px 0 0;
+      font-size:12px;color:var(--stone-500)
+    }
+    .share-btn{background:#1c1917;color:#fff}
+    @media (max-width:640px){
+      .church-name{font-size:56px}
+      .headline{font-size:28px}
+      .title{font-size:28px}
+      .value{font-size:16px}
+      .worship-name{font-size:16px}
+      .main{padding:24px 16px 56px}
+      .hero-inner{padding:34px 18px 38px}
+      .intro-box,.card,.footer-box{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="badge">신약교회의 원리를 따르는 교회</div>
+        <p class="eyebrow">Geoje Assembly</p>
+        <h1 class="church-name">거제교회</h1>
+        <p class="headline">거룩함을 입은 그리스도인의 모임</p>
+        <p class="summary">예수 그리스도를 믿고 거듭난 성도들이 모인 교회이며, 신약교회 원리를 따라 사도들이 세운 초대교회의 모습을 본받아 가기를 힘쓰고 있는 교회입니다.</p>
+
+        <div class="intro-box">
+          <p class="intro-top">Church Introduction</p>
+          <p>거제교회는 예수 그리스도를 믿고 거듭난 성도들이 모인 교회입니다.</p>
+          <p>역사적으로는 19세기 영국과 아일랜드에서 신약교회의 원리를 따라 주님을 섬기기를 갈망하던 그리스도인들의 형제운동에 그 뿌리를 두고 있습니다.</p>
+          <p>오늘날에도 형식보다 말씀을, 제도보다 주님의 뜻을 따라 초대교회의 모습을 본받아 가기를 힘쓰고 있습니다.</p>
+        </div>
+
+        <div class="scroll">Scroll</div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="card">
+        <p class="eyebrow-small">Invitation</p>
+        <h2 class="title">복음 전도 집회에 초대합니다</h2>
+        <p class="desc">복음 전도 집회를 통해 예수 그리스도 안에 있는 생명과 소망의 말씀을 함께 듣는 자리에 초대드립니다.</p>
+
+        <div class="body" style="margin-top:18px">
+          <p>하나님께서 주시는 새 생명과 참된 소망을 함께 나누는 복음 전도 집회에 정중히 초대드립니다.</p>
+          <p>복음은 모든 믿는 자에게 구원을 주시는 하나님의 능력입니다. 이번 집회를 통해 예수 그리스도 안에 있는 생명과 평안의 은혜를 함께 듣고 누리시기 바랍니다.</p>
+          <p>삶의 무게와 분주함 가운데 있는 분들, 복음의 말씀을 다시 듣고 싶은 분들, 가족과 이웃을 위해 기도하는 모든 분들을 기쁨으로 초대합니다.</p>
+          <p class="closing">가족과 이웃, 사랑하는 분들과 함께 오셔서 복음의 기쁨을 나누시기 바랍니다.</p>
+        </div>
+
+        <div class="cards">
+          <div class="info">
+            <div class="icon">📅</div>
+            <div><div class="label">날짜</div><div class="value">2026년 3월 23일 월요일 - 3월 25일 수요일</div></div>
+          </div>
+          <div class="info">
+            <div class="icon">🕒</div>
+            <div><div class="label">시간</div><div class="value">오후 8시</div></div>
+          </div>
+          <div class="info">
+            <div class="icon">⛪</div>
+            <div><div class="label">강사</div><div class="value">황규성 목회자 (부산금정교회)</div></div>
+          </div>
+          <div class="info">
+            <div class="icon">🏛️</div>
+            <div><div class="label">장소</div><div class="value">거제교회당</div></div>
+          </div>
+          <a class="info" href="https://naver.me/xmBrLxLx" target="_blank" rel="noreferrer">
+            <div class="icon">📍</div>
+            <div><div class="label">주소</div><div class="value">경남 거제시 연초면 연하해안로 40-13</div></div>
+          </a>
+          <a class="info" href="tel:010-5499-0195">
+            <div class="icon">☎️</div>
+            <div><div class="label">문의</div><div class="value">010-5499-0195
+김병관 목회자</div></div>
+          </a>
+        </div>
+
+        <div class="host"><strong>주최 / 주관</strong>거제교회</div>
+      </section>
+
+      <div class="section-gap"></div>
+
+      <section class="card worship">
+        <p class="eyebrow-small">Weekly Worship</p>
+        <h2 class="title">정규 집회 안내</h2>
+        <p class="desc">복음 전도 집회 이후에도 계속 예배와 교제의 자리에서 함께하실 수 있습니다.</p>
+
+        <div class="worship-list">
+          <div class="worship-item"><div class="worship-name">주일예배</div><div class="worship-time">10:30</div></div>
+          <div class="worship-item"><div class="worship-name">주일설교</div><div class="worship-time">12:00</div></div>
+          <div class="worship-item"><div class="worship-name">주일학교, 학생회</div><div class="worship-time">09:00<br>(매월 첫째 주 14:00)</div></div>
+          <div class="worship-item"><div class="worship-name">청년회</div><div class="worship-time">토요일 16:00</div></div>
+          <div class="worship-item"><div class="worship-name">수요집회</div><div class="worship-time">수요일 20:00</div></div>
+          <div class="worship-item"><div class="worship-name">기도집회</div><div class="worship-time">금요일 20:00</div></div>
+          <div class="worship-item"><div class="worship-name">토요학교</div><div class="worship-time">매 2, 4주 토요일 11:00</div></div>
+        </div>
+      </section>
+
+      <div class="section-gap"></div>
+
+      <section class="card">
+        <p class="eyebrow-small">Location & Contact</p>
+        <h2 class="title">오시는 길 및 문의 안내</h2>
+        <p class="desc">아래 안내를 통해 교회 위치를 확인하시고 문의하실 수 있습니다.</p>
+
+        <div class="soft-box" style="margin-top:18px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div class="icon" style="width:42px;height:42px;flex-basis:42px;border-radius:16px">📍</div>
+            <div>
+              <div style="font-size:18px;font-weight:700;color:var(--stone-900)">거제교회당</div>
+              <div style="margin-top:4px;font-size:15px;line-height:1.7;color:var(--stone-700)">경남 거제시 연초면 연하해안로 40-13</div>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://naver.me/xmBrLxLx" target="_blank" rel="noreferrer">📍 네이버지도로 길찾기</a>
+          </div>
+        </div>
+
+        <div class="soft-box" style="margin-top:16px">
+          <div style="font-size:15px;color:var(--stone-700)">
+            <strong style="display:block;color:var(--stone-900);margin-bottom:4px">문의자</strong>
+            김병관 목회자
+          </div>
+          <div class="actions">
+            <a class="btn btn-secondary" href="tel:010-5499-0195">☎️ 010-5499-0195</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-box">
+          <div class="share-wrap">
+            <button class="btn share-btn" onclick="sharePage()">🔗 공유하기</button>
+            <p id="shareMsg"></p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    async function sharePage(){
+      const currentUrl = window.location.href;
+      const payload = {
+        title: "새로운 생명으로의 초대",
+        text: "새로운 생명으로의 초대 · 2026년 3월 23일 월요일 - 3월 25일 수요일 오후 8시 · 거제교회당",
+        url: currentUrl
+      };
+      try{
+        if (navigator.share) {
+          await navigator.share(payload);
+          return;
+        }
+        if (navigator.clipboard && currentUrl) {
+          await navigator.clipboard.writeText(currentUrl);
+          document.getElementById('shareMsg').textContent = '링크가 복사되었습니다.';
+          setTimeout(function(){
+            document.getElementById('shareMsg').textContent = '';
+          }, 2200);
+        }
+      }catch(e){}
+    }
+  </script>
+</body>
+</html>
